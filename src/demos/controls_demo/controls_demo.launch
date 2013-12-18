@@ -1,0 +1,27 @@
+<launch>
+
+  <!-- Launch Stingray -->
+  <!--  <include file="$(find hammerhead_start)/hammerhead.launch" />-->
+
+  <!-- Play bag file: TESTING ONLY -->
+  <node pkg="rosbag" type="play" name="rosbag" args="$(find controls_demo)/2.bag" />  
+
+  <!-- Launch RQT reconfigure GUI -->
+  <!--<node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" />-->
+
+  <!-- Debayer and rectify raw images -->
+  <!--<group ns="stereo/left">
+    <node pkg="image_proc" type="image_proc" name="image_proc_left" />
+  </group>
+
+  <group ns="stereo/right">
+    <node pkg="image_proc" type="image_proc" name="image_proc_right" />
+  </group>-->
+
+  <!-- Launch target tracker node -->
+  <node name="target_tracker" pkg="controls_demo" type="target_tracker.py" />
+
+  <!-- Launch controls demo node -->
+  <!--<node name="controls_demo" pkg="controls_demo" type="controls_demo.py" />-->
+
+</launch>

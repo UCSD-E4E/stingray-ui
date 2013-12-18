@@ -1,0 +1,14 @@
+<launch>
+	<arg name="debug" default="false"/>
+	
+    	<include file="$(find stingray_start)/$(env ROBOT).machine" />
+	<include file="$(find stingray_start)/config/stingray_sensors.xml"/>
+	<include file="$(find stingray_start)/config/stingray_odometry.xml"/>
+	<include file="$(find stingray_start)/config/stingray_navigation.xml"/>
+	<include file="$(find stingray_start)/config/stingray_stereo.xml"/>
+	<include file="$(find stingray_start)/config/stingray_staticTransforms.xml"/>
+
+<group if="$(arg debug)">
+	<include file="$(find stingray_start)/config/stingray_sensors.xml"/>
+</group>
+</launch>

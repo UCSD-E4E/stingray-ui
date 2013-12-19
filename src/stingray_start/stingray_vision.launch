@@ -1,0 +1,10 @@
+<!-- Launches Stingray vision system only. -->
+<launch>
+
+    <!-- Start up Stingray computing nodes -->
+    <include file="$(find stingray_start)/$(env ROBOT).machine" />
+
+    <!-- Start up vision system -->
+    <include file="$(find vision_start)/vision.launch" />
+
+</launch>

@@ -1,0 +1,10 @@
+<!-- Launches Stingray controls system only -->
+<launch>
+
+    <!-- Start up Stingray computing nodes -->
+    <include file="$(find stingray_start)/$(env ROBOT).machine" />
+
+    <!-- Start up controls system -->
+    <include file="$(find controls_start)/controls.launch" />
+
+</launch>

@@ -20,6 +20,7 @@ See the documentation website for screenshots explaining mission controller oper
   * Lawnmower: allows user to input a survey area, choose path options, and specify waypoints
   * 3D Mapping: Exact functionality TBD, but will involve selecting survey volume, waypoints, and path options
   * ROV Mode: Navigation/path planning controlled by human operator, but gives options for which sensors should remain active and whether robot should still use vSLAM to build a map
+  * Demo Mode: Allows user to select from premade demos
 
 ##### Survey Options: based on specified mission type
   * Lawnmower

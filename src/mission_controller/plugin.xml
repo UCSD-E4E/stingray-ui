@@ -1,0 +1,31 @@
+<library path="src">
+  <class name="Mission Controller GUI" type="mission_controller.mission_controller.MissionController"
+    base_class_type="rqt_gui_cpp::Plugin">
+
+    <description>
+        Mission Controller GUI for controlling all Stingray systems in a mission.
+        Provides UI controls for:
+          - all important mission-control commands (surface commands, battery warnings, etc.)
+          - vision
+          - path planning
+          - navigation and waypoints
+          - controls
+    </description>
+
+    <qtgui>
+      <group>
+        <label>Vision</label>
+      </group>
+
+      <group>
+        <label>Controls</label>
+      </group>
+
+
+      <label>Mission Controller</label>
+      <icon type="theme">system-help</icon>
+      <statustip>Am I really needed?</statustip>
+    </qtgui>
+
+  </class>
+</library>

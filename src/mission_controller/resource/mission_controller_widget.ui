@@ -1,0 +1,31 @@
+<ui>
+
+<class>MissionController</class>
+
+
+<!-- MAIN WINDOW WIDGET -->
+<widget class="QWidget" name="MissionController">
+
+  <!-- PROPERTIES -->
+  <property name="geometry">
+    <rect>
+      <x>0</x> <y>0</y>
+      <width>1000</width> <height>500</height>
+    </rect>
+  </property>
+
+  <property name="windowTitle">
+    <string>Mission Controller</string>
+  </property>
+
+  <!-- LAYOUT -->
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+
+  </layout>
+
+</widget>
+
+
+
+</ui>

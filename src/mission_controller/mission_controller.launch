@@ -1,0 +1,7 @@
+<!-- Launches rqt_gui with customized plugins -->
+<launch>
+
+    <!-- Launch rqt_gui for mission_controller base -->
+    <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui" />
+
+</launch>

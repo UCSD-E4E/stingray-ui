@@ -1,9 +1,9 @@
 <!-- Starts up all Stingray systems. -->
 <launch>
-    <arg name="debug" default="false"/>
+  <arg name="debug" default="false"/>
 	
-    <!-- Start up Stingray computing nodes-->
-    <include file="$(find stingray_start)/$(env ROBOT).machine" />
+  <!-- Start up Stingray computing nodes-->
+  <include file="$(find stingray_start)/$(env ROBOT).machine" />
     
 
   <!-- Vision System -->

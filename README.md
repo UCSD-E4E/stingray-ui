@@ -11,6 +11,8 @@ Provides the following packages:
 
 Also contains a directory called "demos" that contains various demo packages.
 
+See below for details on included packages and instructions on setting up a machine to work with Stingray.
+
 
 ## Package Details
 
@@ -38,3 +40,8 @@ Provides ability to control Stingray in ROV mode, with full access to sensor sui
 
 ### demo
 TODO: Demo package with TBD functionality
+
+
+## Machine Setup
+
+

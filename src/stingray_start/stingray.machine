@@ -4,10 +4,10 @@
   <machine name="basestation" address="stingray-basestation" default="never" />
 
   <!-- Vision Computer -->
-  <machine name="vision" user="stingray-vision" address="stingray-vision"
+  <machine name="vision" user="stingray-vision" address="stingray-vision" env-loader="/home/stingray-vision/stingray-vision/devel/env.sh"
       default="true" />
 
   <!-- Controls Computer -->
-  <machine name="control" user="stingray-control" address="stingray-control" />
+  <machine name="control" user="stingray-control" address="stingray-control" env-loader="/home/stingray-control/stingray-controls/devel/env.sh" />
 
 </launch>

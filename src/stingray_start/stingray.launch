@@ -5,19 +5,25 @@
     <!-- Start up Stingray computing nodes-->
     <include file="$(find stingray_start)/$(env ROBOT).machine" />
     
-    <!-- Start up all sensors -->
-    <include file="$(find stingray_start)/config/sensors.xml"/>
-    
-    <!-- Start up vision system -->
+
+  <!-- Vision System -->
+  <group ns="vision">
     <include file="$(find vision_start)/vision.launch" />
+  </group>
 
-    <!-- Start up controls system -->
+
+  <!-- Controls System -->
+  <group ns="controls">
     <include file="$(find controls_start)/controls.launch" />
+  </group>
 
-    <!-- Start up Mission Controller UI -->
+  <!-- Start up Mission Controller UI -->
+  <group ns="basestation">
     <include file="$(find mission_controller)/mission_controller.launch" />
+  </group>
 
-    <group if="$(arg debug)">
-        <include file="$(find stingray_start)/config/sensors.xml"/>
-    </group>
+  <!-- Debugging options -->
+  <group if="$(arg debug)">
+      <include file="$(find controls_start)/config/sensors.xml" />
+  </group>
 </launch>

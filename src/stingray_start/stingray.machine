@@ -1,4 +1,13 @@
 <launch>
-  <machine name="control" address="stingray-control" default="true" env-loader="/home/stingray-control/stingray-ui/devel/env.sh" />
-  <machine name="vision" address="stingray-vision" />
+  
+  <!-- Basestation Computer -->
+  <machine name="basestation" address="stingray-basestation" default="never" />
+
+  <!-- Vision Computer -->
+  <machine name="vision" user="stingray-vision" address="stingray-vision"
+      default="true" />
+
+  <!-- Controls Computer -->
+  <machine name="control" user="stingray-control" address="stingray-control" />
+
 </launch>

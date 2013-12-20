@@ -44,4 +44,4 @@ TODO: Demo package with TBD functionality
 
 ## Machine Setup
 
-
+All machines should have SSH keys set up so that authentication isn't required when roslaunching remote processes. [This page](http://paulkeck.com/ssh/) describes how to set up an SSH key for a machine.

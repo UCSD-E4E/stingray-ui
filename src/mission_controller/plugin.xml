@@ -1,6 +1,6 @@
 <library path="src">
   <class name="Mission Controller GUI" type="mission_controller.mission_controller.MissionController"
-    base_class_type="rqt_gui_cpp::Plugin">
+    base_class_type="rqt_gui_py::Plugin">
 
     <description>
         Mission Controller GUI for controlling all Stingray systems in a mission.

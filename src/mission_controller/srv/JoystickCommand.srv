@@ -1,0 +1,10 @@
+# This service sends incoming joystick commands to the planner.
+# It's a service instead of a message since the planner should be 
+# set up to wait for changes in motion commands, not subscribe to 
+# a topic providing continuous motion commands (to save bandwidth
+# in preparation for acoustic control -- though not yet sure this is the best way).
+
+mission_controller/JoystickControl joystick_command
+---
+bool success            # Whether command was received successfully
+string status_message   # Status message about service

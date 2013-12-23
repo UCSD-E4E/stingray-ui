@@ -1,0 +1,7 @@
+# This service gives the planner information about the current mission.
+
+mission_controller/MissionOptions mission_options
+---
+bool success            # True if planner received mission options
+string status_message   # Message sent by planner upon receipt of mission options 
+

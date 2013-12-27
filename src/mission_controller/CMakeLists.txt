@@ -126,6 +126,7 @@ catkin_package(
 ## in contrast to setup.py, you can choose the destination
 install( PROGRAMS
   scripts/mission_controller
+  scripts/stingray_monitor
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+
+<!-- Layout for Lawnmower-specific mission options -->
+<layout class="QHBoxLayout" name="_lawnmower_horizontal_layout_1">
+  <property name="spacing"><number>5</number></property>
+  <property name="margin"><number>5</number></property>
+
+  <item>
+    <widget class="QGroupBox" name="_survey_options_group_box">
+      <property name="title"><string>Survey Area: </string></property>
+
+      <item>
+        <layout class="QGridLayout" name="_survey_options_grid_layout">
+    
+          <item row="1" column="1">
+            <widget class="QLabel" name="_survey_width_label">
+              <property name="text"><string>Width</string></property>
+            </widget>
+          </item>
+
+          <item row="1" column="2">
+            <widget class="QTextEdit" name="_width_text_input">
+              <property name="readOnly"><bool>false</bool></property>
+            </widget>
+          </item>
+
+          <item row="1" column="3">
+            <widget class="QLabel" name="_survey_height_label">
+              <property name="text"><string>Height</string></property>
+            </widget>
+          </item>
+
+          <item row="1" column="4">
+            <widget class="QTextEdit" name="_height_text_input">
+              <property name="readOnly"><bool>false</bool></property>
+            </widget>
+          </item>
+
+        </layout>
+      </item>
+
+    </widget>
+  </item>
+  
+
+</layout>
+
+
+</ui>

@@ -12,7 +12,9 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+find_package(Qt4 COMPONENTS QtCore QtGui REQUIRED)
+
+include(${QT_USE_FILE})
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
